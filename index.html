@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes API</title>
+    <style>
+        body{
+            background: linear-gradient(45deg,rgba(247, 0, 255, 0.76),rgba(255, 0, 0, 0.025));
+        }
+      #joke-container {
+        height: 100vh;
+        display: flex;
+        font-size: 20px;
+        text-align: start;
+        justify-content: space-evenly;
+        flex-direction: column;
+      }
+      h1 {
+        font-weight: bold;
+        text-align: center;
+       background: linear-gradient(45deg,orange,red,blue);
+        background-size: 200% auto;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: gradient 3s linear infinite;
+      }
+      @keyframes gradient{
+       0%{
+        background-position: 70% 0%;
+       }
+        25%{
+        background-position: 30% 50%;
+       }
+        50%{
+        background-position: 60% 60%;
+       }
+        100%{
+        background-position: 100% 95%;
+       }
+      } 
+      p{
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(1, 1, 31);
+      }
+      span{
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>joke API</h1>
+    <div class="container" id="joke-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
